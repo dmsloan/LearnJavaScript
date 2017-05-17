@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>t4variables.html</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <script type="text/javascript">
+    // this is a java script single comment
+
+    /*
+    Vaiiables are case sensitive. Cannot start variables with a number. Name must start with a letter or an underscore
+    */
+        var longname =  " said \"Good morning\" "; // Notice the escape characters to get the quotes to print
+        var name = "Ralph"; // string
+
+        function addNumbers(a,b){
+            var c = a+b;
+            return c;
+        }
+        document.write(addNumbers(3,6) + "<br/>");
+        
+
+        function popup(name, age){
+            alert(name + " is " + age + ".");
+        }
+        document.write(name + " " + longname + "<br/>");
+        popup("Ralph", 12);
+        popup("Sam", 10);
+        var e = null; // empty variable
+    </script>
+<form>
+    <input type="button" value="touch me" onclick=popup("Sweetie")>
+</form>
+</body>
+</html>
