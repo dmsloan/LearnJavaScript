@@ -6,7 +6,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>t9ReturnStatement.html</title>
+    <title>t10callFunctionFromFunction.html</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
@@ -28,9 +28,8 @@
             var c = a+b;
             return c;
         }
-        document.write(addNumbers(3,6) + "<br/>");
+        document.write(addNumbers(3,5) + "<br/>");
         
-
         function popup(name, age){
             alert(name + " is " + age + ".");
         }
@@ -40,7 +39,8 @@
         var e = null; // empty variable
     </script>
 <form>
-    <input type="button" value="touch me" onclick=popup("Sweetie")>
+    <input type="button" value="Tell me about Sweetie" onclick=popup("Sweetie",6)>
+    <input type="button" value="Calculate 3+5" onclick=alert(addNumbers(3,5)>
 </form>
 </body>
 </html>

@@ -6,7 +6,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>t9ReturnStatement.html</title>
+    <title>t11GlobalAndLocalVariables.html</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
@@ -21,26 +21,16 @@
     /*
     Vaiiables are case sensitive. Cannot start variables with a number. Name must start with a letter or an underscore
     */
-        var longname =  " said \"Good morning\" "; // Notice the escape characters to get the quotes to print
-        var name = "Ralph"; // string
-
-        function addNumbers(a,b){
-            var c = a+b;
-            return c;
-        }
-        document.write(addNumbers(3,6) + "<br/>");
+        var son =  "Sam"; // This is a global variable because it is declared outside of a function
         
-
-        function popup(name, age){
-            alert(name + " is " + age + ".");
+        function hello(){
+            var activity = "riding"; // this is a local variable because it is declared in a function, we cannot use it anywhere but in the function
+            document.write(son + " went " + activity);
         }
-        document.write(name + " " + longname + "<br/>");
-        popup("Ralph", 12);
-        popup("Sam", 10);
-        var e = null; // empty variable
+        hello();
+        document.write("<br/>");
+        document.write(son + " went " + activity); // this does not work because activity is undefined here
     </script>
-<form>
-    <input type="button" value="touch me" onclick=popup("Sweetie")>
-</form>
+<p>son</p> <!-- this prints out simply son, it does not pass in the value -->
 </body>
 </html>

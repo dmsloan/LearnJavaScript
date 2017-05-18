@@ -6,7 +6,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>t9ReturnStatement.html</title>
+    <title>t13IfStatement.html</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
@@ -21,26 +21,19 @@
     /*
     Vaiiables are case sensitive. Cannot start variables with a number. Name must start with a letter or an underscore
     */
-        var longname =  " said \"Good morning\" "; // Notice the escape characters to get the quotes to print
-        var name = "Ralph"; // string
+        var apples =  85%4; // this is the modulus operator, it returns the remainder of division
+        var banannas = 7;
 
-        function addNumbers(a,b){
-            var c = a+b;
-            return c;
-        }
-        document.write(addNumbers(3,6) + "<br/>");
-        
+        banannas++;
 
-        function popup(name, age){
-            alert(name + " is " + age + ".");
+        document.write(apples);
+        document.write("<br/>");
+        document.write(banannas);
+
+        if(apples!=banannas){
+            document.write("it works!");
         }
-        document.write(name + " " + longname + "<br/>");
-        popup("Ralph", 12);
-        popup("Sam", 10);
-        var e = null; // empty variable
+
     </script>
-<form>
-    <input type="button" value="touch me" onclick=popup("Sweetie")>
-</form>
 </body>
 </html>
